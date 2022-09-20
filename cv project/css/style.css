@@ -1,0 +1,499 @@
+/* Start Font */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+
+/* End Font */
+
+/* Start Varible */
+
+:root {
+    --primary: #1a253f;
+    --dark: #151A33;
+    --secondary: #2b55cc;
+    --info: #4d79f6;
+    --ternary: #848db3;
+    --pure: #eff2f9;
+    --fade: #7081b9;
+    --mild: #8997bd;
+    --footer: #212A4A;
+    --black: #060b1b;
+    --twitter: #1DA1F2;
+    --dribbble: #ff5ad0;
+    --succes: #1ecab8;
+    --danger: #f1646c;
+    --dark-blue: #28365f;
+    --whatsapp: #25D366;
+    --instgram: #8a3ab9;
+
+}
+
+/* End Varible */
+
+/* Start Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-color: var(--dark);
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    line-height: 1;
+}
+
+/* End Reset */
+
+
+/* Start Global container */
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+    background-color: var(--primary);
+}
+
+/* End  Global container */
+
+/* Start nav */
+
+nav {
+    width: 100%;
+    background-color: var(--primary);
+    padding: 25px 0;
+    padding: 1.6rem 0;
+
+}
+
+nav .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .inner .logo {
+    text-transform: uppercase;
+    color: var(--pure);
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+nav .inner .logo iconify-icon {
+    color: var(--info);
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+nav .inner button {
+    background-color: var(--secondary);
+    color: var(--pure);
+    border: none;
+    padding: 10px 15px;
+    padding: 0.6rem 1rem;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+/* End nav */
+
+/* Start profile */
+
+.container .profile {
+    margin-top: 60px;
+    padding: 45px;
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--black);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 25% 100%, 0 80%);
+    padding-bottom: 4rem;
+}
+
+.container .profile:hover {
+    clip-path: none;
+}
+
+/* Start left-profile */
+
+.container .profile .left-profile {
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+
+.container .profile .left-profile .avatar {
+    position: relative;
+    margin-right: 25px;
+}
+
+.container .profile .left-profile .avatar img {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    object-fit: cover;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.container .profile .left-profile .avatar span {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    background-color: var(--info);
+    color: var(--pure);
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    box-shadow: 0px 0px 20px 0px rgba(32, 42, 54, 0.05);
+    cursor: pointer;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.container .profile .left-profile .avatar span a {
+    color: var(--pure);
+}
+
+.container .profile .left-profile .name h2 {
+    color: var(--fade);
+    margin: 10px 0 10px 10px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.container .profile .left-profile .name p {
+    color: var(--mild);
+    font-size: 15px;
+    margin-left: 15px;
+
+}
+
+.container .profile .left-profile .name p b {
+    padding-bottom: 1rem;
+    font-weight: 400;
+}
+
+.container .profile .left-profile .name .cd-headline.loading-par .cd-words-wrapper::after {
+    background: linear-gradient(to right, var(--secondary), var(--succes));
+}
+
+/* End left-profile */
+
+/* Start right-profile */
+
+.container .profile .right-profile {
+    flex: 1;
+    color: var(--ternary);
+}
+
+.container .profile .right-profile .phone {
+    margin-bottom: 15px;
+}
+
+.container .profile .right-profile .phone span,
+.container .profile .right-profile .email span {
+    font-weight: bold;
+}
+
+
+.container .profile .right-profile .email {
+    margin-bottom: 15px;
+}
+
+.container .profile .right-profile iconify-icon {
+    vertical-align: middle;
+    margin-right: 5px;
+    font-size: 15px;
+}
+
+.container .profile .right-profile .social-media-icons ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.container .profile .right-profile .social-media-icons ul li a iconify-icon {
+    font-size: 20px;
+    margin-right: 20px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.container .profile .right-profile .social-media-icons ul li:nth-child(1) a iconify-icon {
+    color: var(--secondary);
+}
+
+.container .profile .right-profile .social-media-icons ul li:nth-child(2) a iconify-icon {
+    color: var(--whatsapp);
+}
+
+.container .profile .right-profile .social-media-icons ul li:nth-child(3) a iconify-icon {
+    color: var(--twitter);
+}
+
+.container .profile .right-profile .social-media-icons ul li:nth-child(4) a iconify-icon {
+    color: var(--instgram);
+}
+
+/* End right-profile */
+
+/* End profile */
+
+/* Start about */
+
+/* Start left-about */
+.container .about {
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container .about .left-about {
+    width: 50%;
+    padding-bottom: 10px;
+
+}
+
+.container .about .left-about h2 {
+    position: relative;
+    margin-bottom: 3rem;
+    font-size: 22px;
+    color: var(--pure);
+    text-transform: capitalize;
+    font-weight: 500;
+    box-shadow: 0 0 1px rgba(40, 54, 95, 0.1);
+}
+
+.container .about .left-about h2::after,
+.container .education-skills h2:nth-child(1):after {
+    content: "";
+    width: 105px;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    border: 1px solid var(--danger);
+    margin-top: 2px;
+}
+
+.container .about .left-about h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: var(--secondary);
+    text-transform: capitalize;
+}
+
+.container .about .left-about p {
+    margin-bottom: 10px;
+    font-size: 15px;
+    width: 90%;
+    color: var(--ternary);
+}
+
+.container .about .left-about button {
+    width: 110px;
+    padding: 8px 10px;
+    background-color: rgba(77, 121, 246, 0.1);
+    color: var(--ternary);
+    cursor: pointer;
+    text-transform: capitalize;
+    border: none;
+    transition-property: rotate();
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.container .about .left-about button:hover {
+    color: white;
+    transform: rotate(360deg);
+    sc-webkit-transform: scalex(50px);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+/* End left-about */
+
+/* Start right-about */
+.container .about .right-about {
+    margin-right: 25px;
+
+}
+
+.container .about .right-about p {
+    line-height: 1.6;
+    font-size: 15px;
+    color: var(--ternary);
+    letter-spacing: 0.1px;
+    margin-bottom: 1rem;
+
+
+}
+
+.container .about .right-about p span:nth-child(1) {
+    width: 130px;
+    float: left;
+    font-weight: 500;
+    padding-right: 10px;
+    display: block;
+    position: relative;
+}
+
+.container .about .right-about p span:nth-child(1)::after {
+    content: ":";
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+.container .about .right-about p span:nth-child(2) {
+    display: block;
+    padding-left: 150px;
+}
+
+/* End right-about */
+
+/* End about */
+
+/* Start Education & Skills */
+.container .education-skills {
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.container .education-skills h2 {
+    position: relative;
+    font-size: 20px;
+}
+
+.container .education-skills .content {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10%;
+    align-items: center;
+}
+
+.container .education-skills .content .left-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Start left-Education & Skills */
+
+.container .education-skills .content .left-content .educations .heading-educations {
+    margin-bottom: 2rem;
+}
+
+.container .education-skills .content .left-content .educations .heading-educations iconify-icon,
+.container .education-skills .content .left-content .experiences .heading-experiences iconify-icon {
+    font-size: 52px;
+    color: var(--fade);
+}
+
+.container .education-skills .content .left-content h5 {
+    font-size: 16px;
+    margin-top: 0.5rem;
+    margin-bottom: 20px;
+    color: var(--mild);
+}
+
+.container .education-skills .content .left-content p {
+    font-size: 14px;
+    color: var(--ternary);
+    line-height: 1.7;
+
+}
+
+.container .education-skills .content .left-content p .center {
+    color: var(--fade);
+
+}
+
+.container .education-skills .content .left-content .itme {
+    margin-bottom: 2.6rem;
+    margin-left: 15px;
+    position: relative;
+}
+
+.container .education-skills .content .left-content .timeline {
+    border-left: 2px dotted var(--dark-blue);
+}
+
+.container .education-skills .content .left-content .itme::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -23px;
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--info);
+    border-radius: 50%;
+    box-shadow: 0px 5px 10px var(--pure);
+
+}
+
+/* End left-Education & Skills  */
+
+
+/* Start right-Education & Skills  */
+.container .education-skills .content .right-content .skills {
+    margin-top: 80px;
+}
+
+.container .education-skills .content .right-content .skills .item {
+    margin-bottom: 30px;
+}
+
+.container .education-skills .content .right-content .skills .item h4 {
+    font-size: 15px;
+    color: var(--ternary);
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.container .education-skills .content .right-content .skills .item progress {
+    width: 350px;
+    font-size: 10px;
+    box-shadow: 0px 0px 1px 0.25px #4d79f6;
+
+}
+
+/* End right-Education & Skills  */
+
+/* End Education & Skills */
